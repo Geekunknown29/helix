@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="nav">
+      <a class="btn secondary" href="./feed.html">Feed</a>
+      <a class="btn secondary" href="./messaging.html">Messaging</a>
+      <a class="btn secondary" href="./chatbot.html">Chatbot</a>
+    </div>
+    <section class="card">
+      <h2>Services Directory</h2>
+      <p class="muted">Only verified providers in one city are shown.</p>
+      <div><label>Filter by locality</label><input id="locality-filter" placeholder="e.g. Baner" /></div>
+    </section>
+    <section class="columns">
+      <div class="card">
+        <h3>Doctors</h3>
+        <div id="doctor-list" class="list"></div>
+      </div>
+      <div class="card">
+        <h3>Vendors</h3>
+        <div id="vendor-list" class="list"></div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="../../js/modules/services.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor Dashboard</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="nav">
+      <a class="btn secondary" href="./feed.html">Feed</a>
+      <a class="btn secondary" href="./messaging.html">Messaging</a>
+      <a class="btn secondary" href="./services.html">Services</a>
+    </div>
+    <section class="card">
+      <h2>Doctor Services</h2>
+      <p>Specialization: General Physician</p>
+      <span class="badge verified">Verified</span>
+    </section>
+    <section class="card">
+      <h3>Booked Appointments</h3>
+      <div id="appointment-list" class="list"></div>
+    </section>
+  </main>
+  <script type="module" src="../../js/modules/doctor.js"></script>
+</body>
+</html>

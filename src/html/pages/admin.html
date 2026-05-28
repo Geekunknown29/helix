@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h2>Verification Queue</h2>
+      <p class="muted">Review doctor and vendor registrations.</p>
+    </section>
+    <section class="columns">
+      <div class="card">
+        <h3>Doctors Pending</h3>
+        <div id="doctor-verification-queue" class="list"></div>
+      </div>
+      <div class="card">
+        <h3>Vendors Pending</h3>
+        <div id="vendor-verification-queue" class="list"></div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="../../js/modules/admin.js"></script>
+</body>
+</html>

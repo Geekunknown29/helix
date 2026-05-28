@@ -1,0 +1,21 @@
+Health Social Prototype - Dummy Login Users
+Project path: D:\Projects\health-social-prototype
+City: Delhi
+
+1) Public User
+Role: public
+Email: public@healthsocial.demo
+Password: Public@123
+Redirect interface: src/html/pages/public-interface.html
+
+2) Doctor User
+Role: doctor
+Email: doctor@healthsocial.demo
+Password: Doctor@123
+Redirect interface: src/html/pages/doctor-interface.html
+
+3) Vendor User
+Role: vendor
+Email: vendor@healthsocial.demo
+Password: Vendor@123
+Redirect interface: src/html/pages/vendor-interface.html

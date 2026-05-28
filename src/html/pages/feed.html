@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feed</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="app-frame">
+      <header class="app-top-strip">
+        <span class="avatar">U</span>
+        <h1 class="top-title">THE <span class="script">health</span> APP</h1>
+        <a class="post-action" href="../../../index.html">Home</a>
+      </header>
+
+      <nav class="theme-nav" aria-label="User navigation">
+        <a class="post-action active" href="./feed.html">Feed</a>
+        <a class="post-action" href="./messaging.html">Messages</a>
+        <a class="post-action" href="./services.html">Services</a>
+        <a class="post-action" href="./chatbot.html">Chatbot</a>
+      </nav>
+
+      <p class="page-subtitle">
+        <span class="badge" data-city-badge>Serving: Delhi</span>
+        Public health updates, saved tips, and community posts.
+      </p>
+
+      <section class="feed-layout">
+        <aside class="feed-composer">
+          <h2>Health Feed</h2>
+          <form id="new-post-form" class="stack">
+            <div><label>Author</label><input name="author" /></div>
+            <div>
+              <label>Category</label>
+              <select name="category">
+                <option>Diet</option>
+                <option>Exercise</option>
+                <option>Wellness</option>
+                <option>Tips</option>
+              </select>
+            </div>
+            <div><label>Post</label><textarea name="content" required></textarea></div>
+            <button class="btn" type="submit">Publish</button>
+          </form>
+        </aside>
+        <section class="main-panel">
+          <div id="feed-list" class="list"></div>
+        </section>
+      </section>
+    </section>
+  </main>
+  <script type="module" src="../../js/core/common.js"></script>
+  <script type="module" src="../../js/modules/feed.js"></script>
+</body>
+</html>

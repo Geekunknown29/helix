@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+</head>
+<body>
+  <main class="container">
+    <a class="btn secondary" href="../../../index.html">Home</a>
+    <section class="card">
+      <h2>Create Account</h2>
+      <p id="auth-status" class="muted"></p>
+      <form id="signup-form" class="stack">
+        <div><label>Full Name</label><input name="name" required /></div>
+        <div><label>Email</label><input type="email" name="email" required /></div>
+        <div><label>Phone</label><input name="phone" required /></div>
+        <div>
+          <label>Role</label>
+          <select name="role">
+            <option value="public">Public</option>
+            <option value="doctor">Doctor</option>
+            <option value="vendor">Vendor</option>
+          </select>
+        </div>
+        <button class="btn" type="submit">Signup</button>
+      </form>
+    </section>
+  </main>
+  <script src="../../js/modules/auth.js" defer></script>
+</body>
+</html>

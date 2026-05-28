@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+</head>
+<body>
+  <main class="landing-shell">
+    <section class="landing-frame">
+      <header class="app-top-strip">
+        <span class="avatar">👤</span>
+        <h1 class="top-title">THE <span class="script">health</span> APP</h1>
+        <a class="post-action" href="../../../index.html">🏠</a>
+      </header>
+
+      <section class="landing-content auth-card">
+        <h2>Login By User Type</h2>
+        <p id="auth-status" class="muted"></p>
+        <form id="login-form" class="stack" action="#">
+          <div><label>Email</label><input name="email" type="email" required /></div>
+          <div><label>Password</label><input name="password" type="password" required /></div>
+          <div>
+            <label>Role</label>
+            <select name="role">
+              <option value="public">Public</option>
+              <option value="doctor">Doctor</option>
+              <option value="vendor">Vendor</option>
+            </select>
+          </div>
+          <button class="btn" type="submit">Login</button>
+        </form>
+      </section>
+    </section>
+  </main>
+  <script src="../../js/modules/auth.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Messaging</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="app-frame">
+      <header class="app-top-strip">
+        <span class="avatar">U</span>
+        <h1 class="top-title">THE <span class="script">health</span> APP</h1>
+        <a class="post-action" href="../../../index.html">Home</a>
+      </header>
+
+      <nav class="theme-nav" aria-label="User navigation">
+        <a class="post-action" href="./feed.html">Feed</a>
+        <a class="post-action active" href="./messaging.html">Messages</a>
+        <a class="post-action" href="./services.html">Services</a>
+        <a class="post-action" href="./chatbot.html">Chatbot</a>
+      </nav>
+
+      <p class="page-subtitle">
+        <span class="badge">Messages</span>
+        Keep consultation and support conversations in one place.
+      </p>
+
+      <section class="message-layout">
+        <aside class="side-box">
+          <h2>Chats</h2>
+          <button class="conversation-item active" type="button"><span class="avatar">Dr</span>Dr. A. Kulkarni</button>
+          <button class="conversation-item" type="button"><span class="avatar">HS</span>Health Support</button>
+          <button class="conversation-item" type="button"><span class="avatar">FB</span>Fresh Basket</button>
+        </aside>
+        <section class="content-box">
+          <div id="message-thread" class="chat-thread"></div>
+          <form id="message-form" class="message-form-row">
+            <label class="sr-only">Message</label>
+            <input name="body" placeholder="Type a message" required />
+            <button class="btn" type="submit">Send</button>
+          </form>
+        </section>
+      </section>
+    </section>
+  </main>
+  <script type="module" src="../../js/modules/messaging.js"></script>
+</body>
+</html>

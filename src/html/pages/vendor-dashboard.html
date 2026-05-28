@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vendor Dashboard</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="nav">
+      <a class="btn secondary" href="./feed.html">Feed</a>
+      <a class="btn secondary" href="./messaging.html">Messaging</a>
+      <a class="btn secondary" href="./services.html">Services</a>
+    </div>
+    <section class="card">
+      <h2>Vendor Inventory</h2>
+      <span class="badge verified">Verified</span>
+      <form id="inventory-form" class="stack">
+        <div><label>Item Name</label><input name="name" required /></div>
+        <div><label>Category</label><input name="category" required /></div>
+        <div>
+          <label>Available</label>
+          <select name="available">
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+        <button class="btn" type="submit">Add Item</button>
+      </form>
+    </section>
+    <section id="inventory-list" class="list"></section>
+  </main>
+  <script type="module" src="../../js/modules/vendor.js"></script>
+</body>
+</html>

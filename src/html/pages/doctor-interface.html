@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor Interface</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+</head>
+<body>
+  <main id="role-interface" data-role="doctor" class="interface-main">
+    <section class="app-frame">
+      <header class="app-top-strip">
+        <span class="avatar">👤</span>
+        <h1 class="top-title">THE <span class="script">health</span> APP</h1>
+        <button id="logout-btn" class="post-action" type="button">⚙</button>
+      </header>
+
+      <p class="muted"><span id="role-label">Doctor</span> user - <span id="city-label">Serving: Delhi</span></p>
+
+      <section data-section="feed" class="section">
+        <div class="main-panel">
+          <div id="feed-posts"></div>
+        </div>
+      </section>
+
+      <section data-section="messages" class="section" hidden>
+        <div class="split-layout">
+          <aside class="side-box">
+            <h3>Your conversations</h3>
+            <div id="conversation-list"></div>
+          </aside>
+          <section class="content-box message-panel">
+            <div id="message-thread" class="chat-thread"></div>
+            <form id="message-form" class="message-form-row">
+              <label class="sr-only" for="message-input">Message</label>
+              <input id="message-input" name="body" placeholder="Type a message" required />
+              <button class="btn" type="submit">Send</button>
+            </form>
+          </section>
+        </div>
+      </section>
+
+      <section data-section="chatbot" class="section" hidden>
+        <div class="split-layout">
+          <aside class="side-box">
+            <h3>Your conversations</h3>
+            <div class="conversation-placeholder">health support</div>
+            <div class="conversation-placeholder">diet planner</div>
+            <div class="conversation-placeholder">exercise tips</div>
+          </aside>
+          <section class="content-box chatbot-panel">
+            <div id="chatbot-output" class="chat-thread"></div>
+            <form id="chatbot-form" class="chatbot-form-row">
+              <label class="sr-only" for="chatbot-input">Ask chatbot</label>
+              <textarea id="chatbot-input" name="query" placeholder="Ask chatbot" required></textarea>
+              <button class="btn" type="submit">Send</button>
+            </form>
+          </section>
+        </div>
+      </section>
+
+      <section data-section="services" class="section" hidden>
+        <div class="split-layout">
+          <aside class="side-box mini-options">
+            <button type="button">Doctors</button>
+            <button type="button">vendors</button>
+            <button type="button">history</button>
+          </aside>
+          <section class="content-box">
+            <div id="services-cards"></div>
+          </section>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Bottom navigation">
+    <button type="button" data-tab="feed">Feed</button>
+    <button type="button" data-tab="messages">messages</button>
+    <button type="button" data-tab="chatbot">chat bot</button>
+    <button type="button" data-tab="services">services</button>
+  </nav>
+
+  <script src="../../js/modules/role-interface.js" defer></script>
+</body>
+</html>
