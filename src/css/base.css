@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg: #f6f9fc;
   --card: #ffffff;
   --text: #1a2b3c;
@@ -18,7 +18,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text);
-  background: var(--bg);
+  background: var(--bg) url("../../log_page_resource/background_web.png") center center / cover no-repeat fixed;
 }
 
 a {
@@ -48,3 +48,4 @@ h3 {
 .muted {
   color: var(--muted);
 }
+

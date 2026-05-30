@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,27 +7,37 @@
   <link rel="stylesheet" href="../../css/main.css" />
 </head>
 <body>
-  <main class="container">
-    <a class="btn secondary" href="../../../index.html">Home</a>
-    <section class="card">
-      <h2>Create Account</h2>
-      <p id="auth-status" class="muted"></p>
-      <form id="signup-form" class="stack">
-        <div><label>Full Name</label><input name="name" required /></div>
-        <div><label>Email</label><input type="email" name="email" required /></div>
-        <div><label>Phone</label><input name="phone" required /></div>
-        <div>
-          <label>Role</label>
-          <select name="role">
-            <option value="public">Public</option>
-            <option value="doctor">Doctor</option>
-            <option value="vendor">Vendor</option>
-          </select>
-        </div>
-        <button class="btn" type="submit">Signup</button>
-      </form>
+  <main class="auth-page">
+    <section class="auth-hero">
+      <section class="auth-outer-glass">
+        <img class="auth-tagline" src="../../../log_page_resource/text_line.png" alt="Health tagline" />
+        <section class="auth-inner-glass">
+          <div class="auth-switch">
+            <a href="./login.html">SIGN IN</a>
+            <a class="active" href="./signup.html">SIGN UP</a>
+          </div>
+          <p id="auth-status" class="muted auth-status"></p>
+          <form id="signup-form" class="auth-form">
+            <div><label>FULL NAME</label><input name="name" required /></div>
+            <div><label>E-MAIL</label><input type="email" name="email" required /></div>
+            <div><label>PHONE</label><input name="phone" required /></div>
+            <div>
+              <label>USER TYPE</label>
+              <select name="role" required>
+                <option value="public">Public</option>
+                <option value="doctor">Doctor</option>
+                <option value="vendor">Vendor</option>
+              </select>
+            </div>
+            <button class="btn auth-submit" type="submit">SIGN UP</button>
+          </form>
+        </section>
+      </section>
+      
     </section>
   </main>
   <script src="../../js/modules/auth.js" defer></script>
 </body>
 </html>
+
+
