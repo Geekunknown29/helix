@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node server/server.js",
     "dev": "node server/server.js",
-    "check": "node --check server/server.js && node --check src/js/modules/auth.js && node --check src/js/modules/role-interface.js"
+    "check": "node --check server/server.js && node --check api/auth/login.js && node --check api/auth/signup.js && node --check api/health.js && node --check api/state.js && node --check \"api/state/[key].js\" && node --check src/js/modules/auth.js && node --check src/js/modules/role-interface.js"
   },
   "engines": {
     "node": ">=18"
