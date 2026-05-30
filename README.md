@@ -1,4 +1,6 @@
-﻿# Healix
+# Healix
+
+Live site: https://healix-ud39.vercel.app/
 
 Healix is a local health social platform for public users, doctors, and vendors. The UI remains the existing HTML/CSS experience, now served by a Node backend with persistent JSON storage for authentication and app state.
 
